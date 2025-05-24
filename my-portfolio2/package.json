@@ -1,0 +1,40 @@
+{
+  "name": "my-portfolio2",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "updatetech": "node -e \"const fs=require('fs'); const p='src/app/portfolio/page.tsx'; let c=fs.readFileSync(p,'utf8'); c=c.replace(/import { FiExternalLink, FiGithub, FiArrowLeft } from \\\"react-icons\\/fi\\\";/,'import { FiExternalLink, FiGithub, FiArrowLeft } from \\\"react-icons/fi\\\";\\nimport { SiHtml5, SiCss3, SiJavascript, SiReact, SiNextdotjs, SiTailwindcss, SiNodedotjs, SiExpress, SiMongodb, SiPython, SiJava } from \\\"react-icons/si\\\";'); c=c.replace(/interface Technology {\\n  name: string;\\n}/,'interface Technology {\\n  name: string;\\n  icon: JSX.Element;\\n  color: string;\\n}'); fs.writeFileSync(p, c, 'utf8'); console.log('Import and interface updated');\"",
+    "updatetechstack": "node -e \"const fs=require('fs'); const p='src/app/portfolio/page.tsx'; let c=fs.readFileSync(p,'utf8'); const newTechStack = \\\"// Tech stack data with icons\\nconst techStack: Technology[] = [\\n  { name: \\\\\\\"HTML5\\\\\\\", icon: <SiHtml5 className=\\\\\\\"w-10 h-10\\\\\\\" />, color: \\\\\\\"text-orange-500\\\\\\\" },\\n  { name: \\\\\\\"CSS3\\\\\\\", icon: <SiCss3 className=\\\\\\\"w-10 h-10\\\\\\\" />, color: \\\\\\\"text-blue-500\\\\\\\" },\\n  { name: \\\\\\\"JavaScript\\\\\\\", icon: <SiJavascript className=\\\\\\\"w-10 h-10\\\\\\\" />, color: \\\\\\\"text-yellow-400\\\\\\\" },\\n  { name: \\\\\\\"React\\\\\\\", icon: <SiReact className=\\\\\\\"w-10 h-10\\\\\\\" />, color: \\\\\\\"text-cyan-400\\\\\\\" },\\n  { name: \\\\\\\"Next.js\\\\\\\", icon: <SiNextdotjs className=\\\\\\\"w-10 h-10\\\\\\\" />, color: \\\\\\\"text-gray-800 dark:text-white\\\\\\\" },\\n  { name: \\\\\\\"Tailwind CSS\\\\\\\", icon: <SiTailwindcss className=\\\\\\\"w-10 h-10\\\\\\\" />, color: \\\\\\\"text-cyan-500\\\\\\\" },\\n  { name: \\\\\\\"Node.js\\\\\\\", icon: <SiNodedotjs className=\\\\\\\"w-10 h-10\\\\\\\" />, color: \\\\\\\"text-green-600\\\\\\\" },\\n  { name: \\\\\\\"Express.js\\\\\\\", icon: <SiExpress className=\\\\\\\"w-10 h-10\\\\\\\" />, color: \\\\\\\"text-gray-600 dark:text-gray-300\\\\\\\" },\\n  { name: \\\\\\\"MongoDB\\\\\\\", icon: <SiMongodb className=\\\\\\\"w-10 h-10\\\\\\\" />, color: \\\\\\\"text-green-500\\\\\\\" },\\n  { name: \\\\\\\"Python\\\\\\\", icon: <SiPython className=\\\\\\\"w-10 h-10\\\\\\\" />, color: \\\\\\\"text-blue-600\\\\\\\" },\\n  { name: \\\\\\\"Java\\\\\\\", icon: <SiJava className=\\\\\\\"w-10 h-10\\\\\\\" />, color: \\\\\\\"text-red-600\\\\\\\" },\\n];\\\"; const oldTechStackRegex = /\\/\\/ Tech stack data\\nconst techStack: Technology\\[\\] = \\[([\\s\\S]*?)\\];/; c=c.replace(oldTechStackRegex, newTechStack); fs.writeFileSync(p, c, 'utf8'); console.log('Tech stack data updated');\"",
+    "updatecarousel": "node -e \"const fs=require('fs'); const p='src/app/portfolio/page.tsx'; let c=fs.readFileSync(p,'utf8'); const newCarousel = \\\"// Tech Stack Carousel Component\\nconst TechStackCarousel = () => {\\n  return (\\n    <div className=\\\\\\\"overflow-hidden py-10 bg-foreground/5 rounded-xl\\\\\\\">\\n      <motion.div\\n        className=\\\\\\\"flex gap-12 items-center justify-center flex-wrap md:flex-nowrap\\\\\\\"\\n        animate={{ x: [0, -2000] }}\\n        transition={{ \\n          repeat: Infinity, \\n          duration: 30,\\n          ease: \\\\\\\"linear\\\\\\\"\\n        }}\\n      >\\n        {/* Double the tech stack for a seamless loop */}\\n        {[...techStack, ...techStack].map((tech, index) => (\\n          <motion.div \\n            key={} \\n            className=\\\\\\\"flex flex-col items-center gap-3 min-w-28 py-6\\\\\\\"\\n            whileHover={{ y: -5, scale: 1.1 }}\\n            transition={{ duration: 0.2 }}\\n          >\\n            <div className=\\\\\\\"relative w-20 h-20 flex items-center justify-center\\\\\\\">\\n              <div className={} />\\n              <div className={}>\\n                {tech.icon}\\n              </div>\\n            </div>\\n            <span className=\\\\\\\"text-sm font-medium mt-2\\\\\\\">{tech.name}</span>\\n          </motion.div>\\n        ))}\\n      </motion.div>\\n    </div>\\n  );\\n};\\\"; const oldCarouselRegex = /\\/\\/ Tech Stack Carousel Component\\nconst TechStackCarousel = \\(\\) => \\{([\\s\\S]*?)\\};/; c=c.replace(oldCarouselRegex, newCarousel); fs.writeFileSync(p, c, 'utf8'); console.log('Carousel component updated');\""
+  },
+  "dependencies": {
+    "framer-motion": "^12.10.4",
+    "gray-matter": "^4.0.3",
+    "next": "15.3.2",
+    "next-mdx-remote": "^5.0.0",
+    "next-themes": "^0.4.6",
+    "pdfjs-dist": "^3.11.174",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-icons": "^5.5.0",
+    "react-markdown": "^10.1.0",
+    "react-pdf": "^9.2.1"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "@types/react-icons": "^3.0.0",
+    "concurrently": "^9.1.2",
+    "eslint": "^9",
+    "eslint-config-next": "15.3.2",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}

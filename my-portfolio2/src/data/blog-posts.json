@@ -1,0 +1,44 @@
+{
+  "posts": [
+    {
+      "slug": "wtf-is-perplexity",
+      "title": "WTF is Perplexity?",
+      "excerpt": "If you've ever Googled something and thought, 'Why is this taking me down a Reddit rabbit hole, a 6-year-old Quora thread, or some SEO-stuffed blog with zero answers?' — you're not alone. Discover how Perplexity.ai is revolutionizing the way we search for information.",
+      "date": "2024-03-19",
+      "coverImage": "/blog/placeholder-image.svg",
+      "htmlFile": "/perplexity-clean.html",
+      "tags": ["AI", "Technology", "Search", "Machine Learning", "Research Tools"],
+      "content": "Perplexity.ai steps in as a complete rethink of how we search for information. It's like if Google, ChatGPT, and Wikipedia had a highly focused, source-citing baby. Instead of throwing 20 links your way and hoping you'll figure it out, Perplexity gives you a concise, well-researched answer, with citations right beneath it — no guesswork, no fluff. It's built for clarity, speed, and accuracy.",
+      "sections": [
+        {
+          "title": "Introduction",
+          "content": "We've all been there: trying to get a straight answer, only to end up scrolling through outdated forums, ads, or link farms that promise everything and deliver nothing. In an age where AI can generate entire essays in seconds, why does searching for basic information still feel like detective work?"
+        },
+        {
+          "title": "What is Perplexity.ai?",
+          "content": "At first glance, Perplexity.ai might look like just another search bar — but under the hood, it's a lot more powerful. It's an AI-powered answer engine that takes your question, runs it through advanced language models like OpenAI's GPT, Claude, and others, and then pulls verified information from the web to generate a clear, natural-language response — complete with citations you can click on."
+        },
+        {
+          "title": "How Perplexity is Different from Google",
+          "content": "Unlike traditional search engines that prioritize SEO, ads, and popularity, Perplexity is built to prioritize relevance and reliability. It:\n1. Understands your query contextually (no need to type like a robot)\n2. Searches across trusted sources — news sites, academic articles, databases, and forums\n3. Summarizes the information into a human-readable answer\n4. Provides clickable sources underneath so you can verify or dig deeper\n5. Maintains conversation context for follow-up questions"
+        },
+        {
+          "title": "How to Get the Most Out of Perplexity.ai",
+          "content": "1. Ask Like You're Talking to a Human: Use natural language and add specific constraints like 'as of 2024'\n2. Use Follow-up Questions: Treat it like a conversation for more precise information\n3. Leverage Citations: Verify sources through clickable citations\n4. Explore Suggested Threads: Follow contextually linked topics\n5. Use for Real-Time Research: Get up-to-date information with fresh web data\n6. Request Comparisons and Summaries: Ask for structured information like comparisons or lists"
+        },
+        {
+          "title": "Deep Search Mode",
+          "content": "Deep Search transforms Perplexity into an academic-grade research engine. It widens the search scope, diving deeper into academic repositories, expert opinions, and high-authority sources. Every response comes with comprehensive citations, making it perfect for academic research, thesis work, or in-depth topic exploration."
+        },
+        {
+          "title": "Comparison with Competitors",
+          "content": "1. Google SGE: Still ad-heavy and SEO-focused, lacks source transparency\n2. Microsoft Copilot: Good but cluttered interface, requires extra prompting\n3. ChatGPT with Browsing: Great for conversation but vague sourcing, paid feature"
+        },
+        {
+          "title": "Conclusion",
+          "content": "While Google excels at quick facts, Perplexity shines when you need more than surface-level answers. It's built not just for search, but for understanding. In a world drowning in information, that difference matters more than ever."
+        }
+      ]
+    }
+  ]
+} 

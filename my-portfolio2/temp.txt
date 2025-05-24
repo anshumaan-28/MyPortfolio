@@ -1,0 +1,21 @@
+<div className="flex flex-wrap gap-4">
+  <Link href="/portfolio">
+    <motion.button
+      whileHover={{ scale: 1.05 }}
+      whileTap={{ scale: 0.95 }}
+      className="px-6 py-3 bg-foreground text-background rounded-md font-medium"
+    >
+      View My Work
+    </motion.button>
+  </Link>
+  <a href="/Anshumaan_cv.pdf" target="_blank" rel="noopener noreferrer">
+    <motion.button
+      whileHover={{ scale: 1.05 }}
+      whileTap={{ scale: 0.95 }}
+      className="px-6 py-3 bg-transparent border border-foreground text-foreground rounded-md font-medium flex items-center gap-2"
+    >
+      <FiFileText className="w-4 h-4" />
+      <span>Resume</span>
+    </motion.button>
+  </a>
+</div>
